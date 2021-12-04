@@ -1,0 +1,549 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'poppins', "sans-serif";
+}
+
+
+
+
+/* ------ owl-carousal ------ */
+.owl-nav button{
+    display: none !important;
+}
+
+
+
+/* ------- Header ------  */
+
+.header {
+    background-color: #39b5fb;
+}
+
+
+.navbar img{
+    width: 200px;
+}
+
+.nav-link{
+    font-size: 1rem;
+    font-family: sans-serif;
+    font-weight: 600;
+    display: unset !important;
+    color: white !important;
+    padding: 0px 15px !important;
+}
+
+.nav-link:hover{
+    color: black !important;
+}
+
+.dropdown-item{
+    color: #39b5fb !important;
+}
+
+.active-home{
+    color: black !important;
+}
+
+.navbar-toggler{
+    border: 0 !important;
+    outline: none !important;
+}
+
+.fa{
+    color: white !important;
+}
+
+
+
+.collapse .nav-link{
+    font-size: 1rem;
+    font-family: sans-serif;
+    font-weight: normal;
+    line-height: 1cm;
+}
+
+
+/* ------- BANNER SECTION ------- */
+
+.carousel-item{
+    background: no-repeat scroll center scroll;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+.carousel-item::before{
+    content: "";
+    display: block;
+    position: absolute;
+    background: black;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0.4;
+}
+
+.carousel-caption{
+   margin-bottom: 160px;
+}
+
+.carousel-caption h5{
+    font-size: 3rem;
+}
+
+.carousel-caption p{
+    font-size: 1rem;
+    font-weight:normal !important;
+    font-family: sans-serif;
+}
+
+.carousel-caption button{
+    padding: 10px 15px;
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+    border-radius: 5px;
+}
+
+.carousel-caption button:hover{
+    color: #39b5fb;
+    background: white;
+}
+
+.carousel-indicators button{
+    width: 10px !important;
+    height: 10px !important;
+    border-radius: 50%;
+}
+
+.carousel-indicators .active{
+    background-color: #39b5fb !important;
+}
+
+
+/* ------ Treatments Section ------ */
+
+.treatment{
+    padding: 30px 0;
+}
+
+.treatment .nav-link{
+    color: Black !important;
+    font-size: 1rem;
+    padding-bottom: 19px !important;
+    display: unset;
+
+}
+
+.treatment .active{
+    border-bottom: 2px solid #39b5fb !important;
+    border-width: 3px !important;
+}
+
+
+
+/* ------ Overview Section ------ */
+
+.overview{
+    padding: 30px 0;
+}
+
+.overview h1{
+    font-size: 1.7rem;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.overview p{
+    font-size: 1rem;
+    font-family: sans-serif;
+}
+
+.dashed-hr{
+   
+    border-bottom: 1px dashed #39b5fb ;
+    background-color:transparent;
+    width:100%;
+    opacity: 100%;
+
+}
+
+
+
+/* ------ Eligibility Section ------ */
+
+.Eligibility{
+    padding: 30px 0px;
+}
+
+.head{
+    font-size: 1.7rem;
+    margin-bottom: 30px;
+}
+
+.desc{
+    font-size: 1rem;
+    font-family: sans-serif;
+}
+
+.desc-list li{
+    font-size: 1rem;
+    font-family: sans-serif;
+    padding: 5px 0;
+    list-style: none;
+}
+
+.desc-list li::before{
+    content: "\2022\00a0";
+    color: #39b5fb;
+}
+
+
+/* ------ FAQs Section ------ */
+.FAQs{
+    padding: 30px 0;
+}
+
+
+
+.accordion{
+    width: 100%;
+    padding: 0 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.accordion h5{
+    font-size: 1rem;
+    margin: 0;
+    padding: 3px 0 0 0;
+    font-family: sans-serif;
+    font-weight: 600;
+}
+
+.accordion ion-icon{
+    color: #39b5fb;
+}
+
+.panel{
+    padding: 0 15px;
+    border-left: 2px solid #39b5fb;
+    margin-left: 25px;
+    font-size: 1rem;
+    overflow: hidden;
+    /* text-align: justify; */
+    max-height: 0;
+    transition: all 0.5s ease-in;
+}
+
+.panel p{
+    padding: 5px 0;
+    font-family: sans-serif;
+}
+
+
+
+/* ------ Stories Section ------ */
+.stories{
+    padding: 30px 0px;
+}
+
+.card{
+    margin: 0 10px ;
+}
+
+.card h5{
+    font-size: 0.9rem;
+    margin: 15px 0;
+}
+
+.card h3{
+    font-size: 1.4rem;
+}
+
+.card p{
+    font-size: 1rem;
+    color: gray;
+}
+
+
+
+
+
+
+/* ------ SideBar Form------ */
+
+.form-box{
+    margin: 30px 0px;
+    border: 1px solid rgb(204, 203, 203);
+    padding: 30px 25px !important;
+    border-radius: 10px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.form-box h2{
+    color: #39b5fb;
+}
+
+.form-control{
+    margin: 20px 0;
+    height: 55px;
+}
+
+.comment{
+    height: 100px;
+    resize: none;
+}
+
+::placeholder{
+    color: gray;
+    font-family: sans-serif;
+    font-size: 0.8rem;
+}
+
+.form-btn{
+    width: 100%;
+    height: 55px;
+    border: none;
+    border-radius: 5px;
+    font-family: sans-serif;
+    font-weight: 500 !important;
+    background: linear-gradient(to right, #1584c4, #39b5fb);
+    color: white;
+}
+
+.form-box input[type=number]::-webkit-inner-spin-button,
+.form-box input[type=number]::-webkit-outer-spin-button{
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.form-box input{
+    font-family: sans-serif;
+}
+
+
+
+/* ------ Doctors Section ------ */
+.doctors{
+    padding: 50px 0;
+    background-color: #d8f5f7;
+    text-align: center;
+}
+
+.doctors h1{
+    font-size: 2.1rem;
+    font-weight: 600 !important;
+    margin: 10px 0;
+    font-family: sans-serif;
+}
+
+.doctors h1 span{
+    color: #39b5fb;
+}
+
+.doctors h2{
+    font-size: 1.8rem;
+    color: #DB1F48;
+    margin-top: 20px;
+}
+
+.card{
+    padding: 15px;
+    margin-top: 30px;
+    width: auto;
+    height: 400px;
+}
+
+
+.card img{
+    width: 62%;
+    height: 62%;
+    object-position: center;
+}
+
+.card-body h4{
+    color: #DB1F48;
+    font-size: 1.5rem;
+}
+
+.card-body h5{
+    font-size: 1rem;
+}
+
+.card-body p{
+    font-family: sans-serif;
+    font-size: 0.9rem;
+    /* padding-bottom: 10px; */
+}
+
+
+
+/* ------ Hospital Section ----- */
+.hospital{
+    background: white;
+}
+
+.hospital-card{
+    margin: 0 8px;
+    border: 2px solid #DB1F48;
+    border-style: dashed;
+    margin-top: 30px;
+
+    
+}
+
+.hospital-card img{
+    height: 350px;
+}
+
+
+.hospital-card-body {
+    margin: 20px 0;
+}
+
+.hospital-card-body h4{
+    font-size: 1.5rem;
+}
+
+.hospital-card-body h5{
+    color: #DB1F48;
+    font-size: 0.9rem;
+}
+
+
+
+
+/* ------ Contact Section ------ */
+
+.quote{
+    padding: 50px 0;
+    background: linear-gradient(to right, #39b5fb, #1584c4);
+    text-align: center;
+    color: white;
+}
+
+
+.quote h5{
+    font-family: sans-serif;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.quote h1{
+    margin-bottom: 30px;
+}
+
+
+.number{
+    justify-content: center;
+    align-items: center;
+}
+
+.number button{
+    width: 180px;
+    height: 50px;
+    border: 1px solid white;
+    color: white;
+    background: #147ef7;
+}
+
+.number button:hover{
+    color: #147ef7;
+    background: white;
+}
+
+.number h5{
+    margin-top: 20px;
+}
+
+
+
+/* ------ Link Section ------ */
+
+.links{
+    padding-top: 70px !important;
+    padding-bottom: 30px !important;
+    background: #05445E;
+}
+
+.links h5{
+    color: white;
+    font-weight: 200 !important;
+    margin-bottom: 30px;
+}
+
+.links li{
+    list-style: none;
+    color: white;
+    font-family: sans-serif;
+    line-height: 0.8cm;
+    font-size: 0.8rem;
+    cursor: pointer;
+}
+
+.links li::before{
+    content: "-";
+    color: #147ef7;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+.links a{
+    text-decoration: none;
+}
+
+.links hr{
+    color: white;
+}
+
+
+/* ------ contact section ------ */
+
+.contact{
+    padding-top: 30px ;
+}
+
+.contact h5{
+    color: white;
+    margin-bottom: 20px;
+}
+
+.contact p{
+    color: white;
+    font-family: sans-serif;
+    font-size: 0.8rem;
+}
+
+.contact .col-md-3 img{
+    width: 70px;
+    height: 50px;
+}
+
+.contact h3{
+    color: white;
+    font-size: 1rem;
+    margin-top: 50px;
+}
+
+.contact h6{
+    color: #39b5fb;
+    font-size: 1.5rem;
+}
+
+
+/* ------footer section ------ */
+footer{
+    padding: 30px 0;
+    background: #39b5fb;
+}
+
+footer h1{
+    font-size: 0.8rem;
+    color: white;
+    font-family: sans-serif;
+}

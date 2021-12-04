@@ -1,0 +1,62 @@
+
+
+
+@media only screen and (max-width: 1200px){
+    .treatment .treatment-list{
+        display: none;
+    }
+
+    .nav-link{
+        font-size: 0.7rem;
+    }
+
+    .carousel-caption{
+        margin-bottom: 100px;
+    }
+    
+    .carousel-caption h5{
+        font-size: 2rem;
+    }
+    
+    .carousel-caption p{
+        font-size: 0.8rem;
+        font-weight:normal !important;
+        font-family: sans-serif;
+    }
+
+  
+}
+
+
+@media only screen and (max-width: 1000px){
+
+    
+
+
+    .NavBar{
+        /* background-color: red; */
+        width: 200px;
+        float: right;
+        transition: 1s;
+    }
+
+    .overview img{
+        margin-top: 50px;
+    }
+
+    .carousel-caption{
+        margin-bottom: 60px;
+    }
+
+    .contact h6{
+        font-size: 1rem;
+    }
+
+    .contact .col-md-5{
+        margin: 20px 0;
+    }
+
+    footer{
+        text-align: center;
+    }
+}

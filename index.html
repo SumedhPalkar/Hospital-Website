@@ -1,0 +1,879 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hospital Website</title>
+  <link rel="Icon" href="https://img.icons8.com/ios-filled/100/fa314a/hospital.png">
+
+  <!-- ------ Custom CSS ------ -->
+  <link rel="stylesheet" href="Style.css">
+  <link rel="stylesheet" href="responsive.css">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+  <!-- ------ Bootstrap CSS ------ -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- 1. Owl carousel min .css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- 2. Owl carousel theme Min .css -->
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+
+  <!-- ------- Header --------  -->
+
+  <header class="header">
+
+    <div class="container nav-cont">
+      <nav class="navbar navbar-expand-lg ">
+        <a class="navbar-brand" href="#">
+          <img src=".//Images/header_logo.png" alt="">
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup" aria-expanded="false">
+          <i class="fa fa-bars"></i>
+
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+          <div class="navbar-nav NavBar">
+            <a class="nav-link active-home" aria-current="page" href="#">Home</a>
+            <a class="nav-link" href="#">About Us</a>
+            <a class="nav-link" href="#overview">Treatments</a>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Destinations
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDarkDropdownMenuLink">
+                <li><a class="dropdown-item" href="#">India</a></li>
+                <li><a class="dropdown-item" href="#">USA</a></li>
+                <li><a class="dropdown-item" href="#">Germany</a></li>
+              </ul>
+            </li>
+
+            <a class="nav-link" href="#hospital">Hospitals</a>
+            <a class="nav-link" href="#faq">FAQs</a>
+            <a class="nav-link" href="#">Blog</a>
+            <a class="nav-link" href="#Quote">Reaquest A Quote</a>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <!-- ------- BANNER SECTION ------- -->
+    <div class="banner">
+
+      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./Images/banner1.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Mediretreates</h5>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium similique <br> ipsum consectetur
+                recusandae corrupti iure.</p>
+              <button>Explore Now</button>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./Images/banner2.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Mediretreates</h5>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium similique <br> ipsum consectetur
+                recusandae corrupti iure.</p>
+              <button>Explore Now</button>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./Images/banner3.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Mediretreates</h5>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium similique <br> ipsum consectetur
+                recusandae corrupti iure.</p>
+              <button>Explore Now</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+
+  </header>
+
+
+  <!-- ------ Treatments Section ------ -->
+
+  <section class="treatment">
+    <div class="container">
+      <!-- ------ Treatments List ------ -->
+      <div class="row treatment-list">
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Overview</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Eligibility">Eligibility</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Preparation">Preparation</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#About">About Treatment</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Post-tret">Post-Treatment Care</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Recovery">Recovery Tips</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#faq">FAQs</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Story">Patients Stories</a>
+          </li>
+        </ul>
+      </div>
+      <hr class="treatment-list">
+
+
+      <!-- ------ Overview Section ------ -->
+      <div class="overview" id="overview">
+        <div class="row">
+          <div class="col-md-6">
+            <h1>Treatment Overview</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae nemo architecto placeat beatae
+              accusamus, earum aperiam. <br><br> Obcaecati accusamus dolorem magni maxime tempora? Exercitationem unde
+              numquam ex delectus sit reprehenderit obcaecati provident veritatis voluptatem sed est similique dolor
+              ipsum, minima nisi debitis! Distinctio praesentium quod velit earum. <br><br> Officia nobis eius culpa.
+              Voluptatum assumenda odit dolores inventore officia animi neque modi omnis totam amet.</p>
+          </div>
+
+          <div class="col-md-6">
+            <img src="./Images/overview.jpg" alt="" class="img-fluid">
+          </div>
+        </div>
+      </div>
+      <hr class="dashed-hr">
+    </div>
+  </section>
+
+
+  <!-- ------ GRID FOR TREATMNETS ------ -->
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8">
+
+        <!-- ------ Eligibility Section ------ -->
+        <section class="Eligibility" id="Eligibility">
+          <div class="row">
+            <div class="col">
+              <h1 class="head">Eligibility For Treatment</h1>
+              <p class="desc">Any individual who has tried diet and exercise but failed to lose weight is considered as
+                a good candidate for
+                gastric bypass. Although gastric bypass aids in weight loss, it is not an appropriate option for
+                everyone.
+                Based on the overall health and certain medical guidelines, the doctor will decide whether you are
+                eligible
+                for gastric bypass or not. <br> <br> In general, gastric bypass could be a good option if:
+
+              <ul class="desc-list">
+                <li>The BMI (Body Mass Index) is 40 or more.</li>
+                <li>Your BMI is 30 or more with severe weight-related health conditions like type 2 diabetes and high
+                  blood pressure</li>
+                <li>You are willing to make permanent changes in the lifestyle</li>
+              </ul>
+              </p>
+
+            </div>
+          </div>
+        </section>
+        <hr class="dashed-hr">
+
+
+
+
+        <!-- ------ Preparation Section ------ -->
+        <section class="Eligibility" id="Preparation">
+          <div class="row">
+            <div class="col">
+              <h1 class="head">Preparation before Treatment</h1>
+              <p class="desc">Any individual who has tried diet and exercise but failed to lose weight is considered as
+                a good candidate for
+                gastric bypass. Although gastric bypass aids in weight loss, it is not an appropriate option for
+                everyone.
+                Based on the overall health and certain medical guidelines, the doctor will decide whether you are
+                eligible
+                for gastric bypass or not. <br> <br> In general, gastric bypass could be a good option if:
+
+              <ul class="desc-list">
+                <li>The BMI (Body Mass Index) is 40 or more.</li>
+                <li>Your BMI is 30 or more with severe weight-related health conditions like type 2 diabetes and high
+                  blood pressure</li>
+                <li>You are willing to make permanent changes in the lifestyle</li>
+              </ul>
+              </p>
+
+            </div>
+          </div>
+        </section>
+        <hr class="dashed-hr">
+
+
+
+        <!-- ------ About Section ------ -->
+        <section class="Eligibility" id="About">
+          <div class="row">
+            <div class="col">
+              <h1 class="head">About Treatment</h1>
+              <p class="desc">Any individual who has tried diet and exercise but failed to lose weight is considered as
+                a good candidate for
+                gastric bypass. Although gastric bypass aids in weight loss, it is not an appropriate option for
+                everyone.
+                Based on the overall health and certain medical guidelines, the doctor will decide whether you are
+                eligible
+                for gastric bypass or not. <br> <br> In general, gastric bypass could be a good option if:
+
+              <ul class="desc-list">
+                <li>The BMI (Body Mass Index) is 40 or more.</li>
+                <li>Your BMI is 30 or more with severe weight-related health conditions like type 2 diabetes and high
+                  blood pressure</li>
+                <li>You are willing to make permanent changes in the lifestyle</li>
+              </ul>
+              </p>
+
+            </div>
+          </div>
+        </section>
+        <hr class="dashed-hr">
+
+
+
+        <!-- ------ Post Treatment Section ------ -->
+        <section class="Eligibility" id="Post-tret">
+          <div class="row">
+            <div class="col">
+              <h1 class="head">Post-Treatment Care</h1>
+              <p class="desc">Any individual who has tried diet and exercise but failed to lose weight is considered as
+                a good candidate for
+                gastric bypass. Although gastric bypass aids in weight loss, it is not an appropriate option for
+                everyone.
+                Based on the overall health and certain medical guidelines, the doctor will decide whether you are
+                eligible
+                for gastric bypass or not. <br> <br> In general, gastric bypass could be a good option if:
+
+              <ul class="desc-list">
+                <li>The BMI (Body Mass Index) is 40 or more.</li>
+                <li>Your BMI is 30 or more with severe weight-related health conditions like type 2 diabetes and high
+                  blood pressure</li>
+                <li>You are willing to make permanent changes in the lifestyle</li>
+              </ul>
+              </p>
+
+            </div>
+          </div>
+        </section>
+        <hr class="dashed-hr">
+
+
+
+        <!-- ------ Recovery Section ------ -->
+        <section class="Eligibility" id="Recovery">
+          <div class="row">
+            <div class="col">
+              <h1 class="head">Treatment Recovery Tips</h1>
+              <p class="desc">Any individual who has tried diet and exercise but failed to lose weight is considered as
+                a good candidate for
+                gastric bypass. Although gastric bypass aids in weight loss, it is not an appropriate option for
+                everyone.
+                Based on the overall health and certain medical guidelines, the doctor will decide whether you are
+                eligible
+                for gastric bypass or not. <br> <br> In general, gastric bypass could be a good option if:
+
+              <ul class="desc-list">
+                <li>The BMI (Body Mass Index) is 40 or more.</li>
+                <li>Your BMI is 30 or more with severe weight-related health conditions like type 2 diabetes and high
+                  blood pressure</li>
+                <li>You are willing to make permanent changes in the lifestyle</li>
+              </ul>
+              </p>
+
+            </div>
+          </div>
+        </section>
+        <hr class="dashed-hr">
+
+
+
+
+        <!-- ------ FAQs Section ------ -->
+        <section class="FAQs" id="faq">
+          <div class="row">
+            <div class="col">
+              <h1 class="head">Treatment Recovery Tips</h1>
+              <!-- <p class="desc">
+
+                <hr>
+                <li>How do I know the clinic i am searching is verified?</li>
+                <hr>
+                <li>I can't travel alone so can some family memeber or friends of mine accompany me?</li>
+                <hr>
+                <li>Can I see my doctor before I decide and what about my post recovery?</li>
+                <hr>
+                <li>How do I share my reports and medical cases with the clinic of my choice?</li>
+                <hr>
+
+                <ion-icon name="add"></ion-icon>
+                <ion-icon name="remove"></ion-icon>
+              </p> -->
+
+              <hr>
+              <div class="accordion">
+                <h5>
+                  <ion-icon name="add"></ion-icon>
+                  How do I know the clinic I am searching is verified?</h5>
+              </div>
+              <div class="panel">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus eaque nemo perferendis necessitatibus soluta numquam excepturi iure dignissimos aut repudiandae.</p>
+              </div>
+              <hr>
+
+              <div class="accordion">
+                <h5>
+                  <ion-icon name="add"></ion-icon>
+                  I can't travel alone so can some family memeber or friends of mine accompany me?</h5>
+              </div>
+              <div class="panel">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus eaque nemo perferendis necessitatibus soluta numquam excepturi iure dignissimos aut repudiandae.</p>
+              </div>
+              <hr>
+
+              <div class="accordion">
+                <h5>
+                  <ion-icon name="add"></ion-icon>
+                  Can I see my doctor before I decide and what about my post recovery?</h5>
+              </div>
+              <div class="panel">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus eaque nemo perferendis necessitatibus soluta numquam excepturi iure dignissimos aut repudiandae.</p>
+              </div>
+              <hr>
+
+              <div class="accordion">
+                <h5>
+                  <ion-icon name="add"></ion-icon>
+                  How do I share my reports and medical cases with the clinic of my choice?</h5>
+              </div>
+              <div class="panel">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus eaque nemo perferendis necessitatibus soluta numquam excepturi iure dignissimos aut repudiandae.</p>
+              </div>
+              <hr>
+
+              </div>
+
+
+
+
+
+            </div>
+          </div>
+        </section>
+        <hr class="dashed-hr">
+
+
+        <!-- ------ Stories Section ------ -->
+        <section class="stories" id="Story">
+          <h1 class="head">Patients Stories</h1>
+
+          <!-- ------ OWL Carousal ------ -->
+          <div class="row">
+            <div class="owl-carousel owl-theme">
+
+
+              <div class="card" style="width: 15rem;">
+                <h5>Underwent procedure for retinal detatchment</h5>
+                <img src=".//Images/Patient1.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h3 class="card-text">Luke Taylor</h3>
+                  <p class="card-text">New York, USA</p>
+                </div>
+              </div>
+
+
+
+              <div class="card" style="width: 15rem;">
+                <h5>Underwent Colonoscopy & Medical Managment</h5>
+                <embed src="https://www.youtube.com/embed/eWwKQjUyoUc&t=209s" style="height: 15rem;" type=""></embed>
+                <div class="card-body">
+                  <h3 class="card-text">Will Smith</h3>
+                  <p class="card-text">Washington DC, USA</p>
+                </div>
+              </div>
+
+
+
+              <div class="card" style="width: 15rem;">
+                <h5>Underwent procedure for retinal detatchment</h5>
+                <img src=".//Images/person1.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h3 class="card-text">Luna Lovegood</h3>
+                  <p class="card-text">France</p>
+                </div>
+              </div>
+
+              <div class="card" style="width: 15rem;">
+                <h5>Underwent procedure for heart transplant</h5>
+                <img src=".//Images/person2.jpg" class="card-img-top" style="height: 15rem;" alt="...">
+                <div class="card-body">
+                  <h3 class="card-text">David Duke</h3>
+                  <p class="card-text">Germany</p>
+                </div>
+              </div>
+
+              <div class="card" style="width: 15rem;">
+                <h5>Underwent procedure for back Surgery</h5>
+                <img
+                  src="https://i.guim.co.uk/img/media/a70fcfe9c132239554a052319d1f46c14d045553/0_69_3164_1898/master/3164.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=a0cf36524d843c4c21f8db0a1c912523"
+                  class="card-img-top" style="height: 15rem;" alt="...">
+                <div class="card-body">
+                  <h3 class="card-text">John Cena</h3>
+                  <p class="card-text">Germany</p>
+                </div>
+              </div>
+
+
+
+
+            </div>
+          </div>
+
+        </section>
+        <hr class="dashed-hr">
+
+      </div>
+
+
+
+      <!-- -------- Sidebar -------- -->
+      <div class="col-md-4">
+        <div class="form-box">
+          <h2>Need Help?</h2>
+          <p class="desc">Just let us know. We will be happy to assist you.</p>
+
+
+          <input type="text" class="form-control" aria-label="Sizing example input"
+            aria-describedby="inputGroup-sizing-default" placeholder="Full Name">
+
+          <input type="email" class="form-control" aria-label="Sizing example input"
+            aria-describedby="inputGroup-sizing-default" placeholder="Email">
+
+          <input type="number" class="form-control" aria-label="Sizing example input" placeholder="Phone Number">
+
+          <textarea class="form-control comment" placeholder="Describe Your Treatment Requirment"
+            id="floatingTextarea"></textarea>
+
+          <button class="form-btn">Send Enquiry</button>
+
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+
+
+  <!-- ------ Doctors Section ------ -->
+  <section class="doctors">
+    <div class="container">
+      <h2>Doctors</h2>
+      <h1>Top Orthopaedic <span>Doctors</span></h1>
+      <!-- ------ OWL Carousal ------ -->
+      <div class="row">
+        <div class="owl-carousel owl-theme">
+
+          <div class="item mb-4">
+            <div class="card">
+              <img src=".//Images/Doctor1.jpg" alt="" class="card-img-top">
+              <div class="card-body">
+                <h4>Dr. William Taylor</h4>
+                <h5>Institute Name</h5>
+                <p>Doctor Degree & Speciality</p>
+              </div>
+            </div>
+          </div>
+          <!-- Item End -->
+
+
+
+          <div class="item mb-4">
+            <div class="card">
+              <img src=".//Images/Doctor2.jpg" alt="" class="card-img-top">
+              <div class="card-body">
+                <h4>Dr. William Taylor</h4>
+                <h5>Institute Name</h5>
+                <p>Doctor Degree & Speciality</p>
+              </div>
+            </div>
+          </div>
+          <!-- Item End -->
+
+
+          <div class="item mb-4">
+            <div class="card">
+              <img src=".//Images/Doctor3.jpg" alt="" class="card-img-top">
+              <div class="card-body">
+                <h4>Dr. William Taylor</h4>
+                <h5>Institute Name</h5>
+                <p>Doctor Degree & Speciality</p>
+              </div>
+            </div>
+          </div>
+          <!-- Item End -->
+
+
+
+          <div class="item mb-4">
+            <div class="card">
+              <img src=".//Images/Doctor4.jpg" alt="" class="card-img-top">
+              <div class="card-body">
+                <h4>Dr. William Taylor</h4>
+                <h5>Institute Name</h5>
+                <p>Doctor Degree & Speciality</p>
+              </div>
+            </div>
+          </div>
+          <!-- Item End -->
+
+
+          <div class="item mb-4">
+            <div class="card">
+              <img src=".//Images/Doctor5.jpg" alt="" class="card-img-top ">
+              <div class="card-body">
+                <h4>Dr. William Taylor</h4>
+                <h5>Institute Name</h5>
+                <p>Doctor Degree & Speciality</p>
+              </div>
+            </div>
+          </div>
+          <!-- Item End -->
+
+
+
+        </div>
+      </div>
+
+    </div>
+
+    </div>
+  </section>
+
+
+
+
+  <!-- ------ Hospital Section ------ -->
+  <section class="doctors hospital" id="hospital">
+    <div class="container">
+      <h2>Hospitals</h2>
+      <h1>Recommended <span>Hospitals</span></h1>
+      <!-- ------ OWL Carousal ------ -->
+      <div class="row">
+        <div class="owl-carousel owl-theme">
+
+          <div class="item mb-4">
+            <div class="hospital-card">
+              <img src="https://www.healthcareradius.in/public/images/2019/12/20/jaslok-hospital.jpg" alt=""
+                class="card-img-top img-fluid">
+              <div class="hospital-card-body">
+                <h4>Jaslok Hospital</h4>
+                <h5>Mumbai</h5>
+              </div>
+            </div>
+          </div>
+          <!-- Item End -->
+
+          <div class="item mb-4">
+            <div class="hospital-card">
+              <img src="https://ehealth.eletsonline.com/wp-content/uploads/2014/05/001-Manipal-MHB-Building.jpg" alt=""
+                class="card-img-top img-fluid">
+              <div class="hospital-card-body">
+                <h4>Manipal Hospital</h4>
+                <h5>Goa</h5>
+              </div>
+            </div>
+          </div>
+          <!-- Item End -->
+
+          <div class="item mb-4">
+            <div class="hospital-card">
+              <img
+                src="https://cdn.dnaindia.com/sites/default/files/styles/full/public/2017/10/05/614635-kokilaben-hospital.jpg"
+                alt="" class="card-img-top img-fluid">
+              <div class="hospital-card-body">
+                <h4>Kokilaben Hospital</h4>
+                <h5>Mumbai</h5>
+              </div>
+            </div>
+          </div>
+          <!-- Item End -->
+
+          <div class="item mb-4">
+            <div class="hospital-card">
+              <img
+                src="https://media-exp1.licdn.com/dms/image/C511BAQH5EB7sgYSARw/company-background_10000/0/1542950511849?e=2159024400&v=beta&t=2bTDJzk3UwScEkvup7xu_vsxt4d-wCtZD0g3W-E8nGQ"
+                alt="" class="card-img-top img-fluid">
+              <div class="hospital-card-body">
+                <h4>Hiranandani Hospital</h4>
+                <h5>Mumbai</h5>
+              </div>
+            </div>
+          </div>
+
+
+          <!-- Item End -->
+          <div class="item mb-4">
+            <div class="hospital-card">
+              <img src="https://www.nirujahealthtech.com/wp-content/uploads/2019/09/Sir.jpg" alt=""
+                class="card-img-top img-fluid">
+              <div class="hospital-card-body">
+                <h4>Reliance Hospital</h4>
+                <h5>Mumbai</h5>
+              </div>
+            </div>
+          </div>
+          <!-- Item End -->
+
+
+        </div>
+      </div>
+
+      <p class="mt-2">Don't hesitate, contact us for better help and services. </p>
+    </div>
+
+    </div>
+  </section>
+
+
+  <!-- ------ Quote Section ------ -->
+
+  <section class="quote" id="Quote">
+    <div class="container">
+      <div class="row">
+        <h5>Stay healthy and strong to enjoy life</h5>
+        <h1>We have team of healthcare experts</h1>
+        <div class="number">
+          <button>Get In Touch</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- ------ Link Section ------ -->
+  <section class="links">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <h5>Important Links</h5>
+          <ul>
+            <a href="">
+              <li>Home</li>
+            </a>
+            <a href="">
+              <li>About Us</li>
+            </a>
+            <a href="">
+              <li>FAQs</li>
+            </a>
+            <a href="">
+              <li>Blog</li>
+            </a>
+            <a href="">
+              <li>Contact Us</li>
+            </a>
+          </ul>
+        </div>
+
+        <div class="col-md-3">
+          <h5>Top Hospitals</h5>
+          <ul>
+            <li>Jaslok Hospital</li>
+            <li>Manipal Hospital</li>
+            <li>Kokilaben Hospital</li>
+            <li>Hiranandani Hospital</li>
+            <li>Reliance Hospital</li>
+            <li>View All</li>
+          </ul>
+        </div>
+
+        <div class="col-md-3">
+          <h5>Speciality Treatments</h5>
+          <ul>
+            <li>Knee Replacement Surgeon</li>
+            <li>Urologist</li>
+            <li>Spine Surgeons</li>
+            <li>ENT Surgeons</li>
+            <li>Orthopaedic</li>
+            <li>Cardiologist</li>
+            <li>View All</li>
+          </ul>
+        </div>
+
+        <div class="col-md-3">
+          <h5>Medical Tourism Destinations</h5>
+          <ul>
+            <li>Medical Tourism in India</li>
+            <li>Medical Tourism in USA</li>
+            <li>Medical Tourism in </li>
+            <li>View All</li>
+          </ul>
+        </div>
+      </div>
+      <hr>
+
+
+      <div class="row contact">
+        <div class="col-md-4">
+          <img src=".//Images/header_logo.png" alt="" class="img-fluid">
+        </div>
+
+        <div class="col-md-5">
+          <h5>About Aafiya Mediretreates</h5>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id odit nam asperiores et earum nobis
+            reprehenderit alias optio doloremque explicabo! Harum blanditiis atque, fugiat amet delectus deleniti id
+            voluptates dicta sint dolores quis pariatur dignissimos consequatur dolorem obcaecati numquam! Doloremque
+            animi tempore nisi labore reiciendis voluptate ut temporibus minima est.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem expedita iure optio dolore?
+          </p>
+        </div>
+
+        <div class="col-md-3">
+          <h5>Follow Us On</h5>
+          <div class="row">
+            <img src="https://img.icons8.com/fluency/48/000000/facebook.png" />
+            <img src="https://img.icons8.com/color/48/000000/twitter.png" />
+            <img src="https://img.icons8.com/fluency/48/000000/instagram-new.png" />
+            <img src="https://img.icons8.com/color/48/000000/youtube-play.png" />
+          </div>
+
+          <h3>Customer Service</h3>
+          <h6>+91 989 666 5555</h6>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+
+
+  <!-- ------footer section ------ -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-sm-6 col-12">
+          <h1>Copyright &copy; Aafiya Mediretreates. All Rights Reserved.</h1>
+        </div>
+
+        <div class="col-md-3 col-sm-3 col-12">
+          <h1>Terms & conditions.</h1>
+        </div>
+
+        <div class="col-md-3 col-sm-3 col-12 ">
+          <h1> Privacy Policy </h1>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- ------- Custome Script -------- -->
+  <script src="main.js"></script>
+
+  <!-- ------ Bootstrap Script ------ -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
+
+  <!-- ------ CDN file for owl carousel ------ -->
+
+  <!-- 0. jquery cdn -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <!-- 1. Owl carousel min .js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+    integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <!-- Init owl carousel -->
+  <script>
+    $('.owl-carousel').owlCarousel({
+      loop: true,
+      margin: 10,
+      nav: true,
+      responsive: {
+        0: {
+          items: 1
+        },
+        600: {
+          items: 2
+        },
+        1000: {
+          items: 3
+        }
+      }
+    })
+  </script>
+
+
+  <!-- -------IociconsPack ------- -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
